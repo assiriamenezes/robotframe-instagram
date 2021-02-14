@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20210214 18:37:20.435" rpa="false">
+<suite id="s1" name="TestCasesBDDExemplo" source="C:\Demos\DemoWeb\testes\TestCasesBDDExemplo.robot">
+<test id="s1-t1" name="Cenário 01: Login no Instagram">
+<kw name="Dado que esteja na tela HOME do Instagram" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<kw name="Que esteja na tela HOME do Instagram" library="ResourceBDD">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.instagram.com/</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210214 18:37:20.958" level="INFO">Opening browser 'chrome' to base url 'https://www.instagram.com/'.</msg>
+<status status="PASS" starttime="20210214 18:37:20.957" endtime="20210214 18:37:28.417"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210214 18:37:28.417" endtime="20210214 18:37:30.607"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${USUARIO}</arg>
+</arguments>
+<status status="PASS" starttime="20210214 18:37:30.607" endtime="20210214 18:37:30.673"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:20.956" endtime="20210214 18:37:30.674"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:20.955" endtime="20210214 18:37:30.674"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:20.955" endtime="20210214 18:37:30.674"></status>
+</kw>
+<kw name="E desejo inputar &quot;usuario&quot; na aba" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<kw name="desejo inputar &quot;usuario&quot; na aba" library="ResourceBDD">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${USUARIO}</arg>
+<arg>assiriatest@gmail.com</arg>
+</arguments>
+<msg timestamp="20210214 18:37:30.679" level="INFO">Typing text 'assiriatest@gmail.com' into text field 'xpath=.//*[@id="loginForm"]/div/div[1]/div/label/input'.</msg>
+<status status="PASS" starttime="20210214 18:37:30.678" endtime="20210214 18:37:31.018"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210214 18:37:33.035" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210214 18:37:31.019" endtime="20210214 18:37:33.035"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:30.678" endtime="20210214 18:37:33.035"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:30.677" endtime="20210214 18:37:33.036"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:30.676" endtime="20210214 18:37:33.036"></status>
+</kw>
+<kw name="E inputo &quot;senha&quot; na aba" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<kw name="inputo &quot;senha&quot; na aba" library="ResourceBDD">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SENHA}</arg>
+<arg>sidia@123</arg>
+</arguments>
+<msg timestamp="20210214 18:37:33.039" level="INFO">Typing text 'sidia@123' into text field 'xpath=.//*[@id="loginForm"]/div/div[2]/div/label/input'.</msg>
+<status status="PASS" starttime="20210214 18:37:33.038" endtime="20210214 18:37:33.324"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210214 18:37:36.334" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210214 18:37:33.324" endtime="20210214 18:37:36.334"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:33.038" endtime="20210214 18:37:36.334"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:33.037" endtime="20210214 18:37:36.335"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:33.037" endtime="20210214 18:37:36.335"></status>
+</kw>
+<kw name="Quando eu clicar no botao &quot;entrar&quot; para finalizar" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<kw name="Eu clicar no botao &quot;entrar&quot; para finalizar" library="ResourceBDD">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="loginForm"]/div/div[3]/button/div</arg>
+</arguments>
+<status status="PASS" starttime="20210214 18:37:36.340" endtime="20210214 18:37:36.367"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="loginForm"]/div/div[3]/button/div</arg>
+</arguments>
+<msg timestamp="20210214 18:37:36.367" level="INFO">Clicking element 'xpath=//*[@id="loginForm"]/div/div[3]/button/div'.</msg>
+<status status="PASS" starttime="20210214 18:37:36.367" endtime="20210214 18:37:36.504"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20210214 18:37:46.506" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210214 18:37:36.504" endtime="20210214 18:37:46.507"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:36.339" endtime="20210214 18:37:46.508"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:36.339" endtime="20210214 18:37:46.508"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:36.338" endtime="20210214 18:37:46.508"></status>
+</kw>
+<kw name="Então o popup e desmonstrado" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<kw name="O popup e desmonstrado" library="ResourceBDD">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/div[4]/div/div/div/div[3]/button[1]</arg>
+</arguments>
+<msg timestamp="20210214 18:37:46.518" level="INFO">Clicking element 'xpath=/html/body/div[4]/div/div/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20210214 18:37:46.517" endtime="20210214 18:37:46.805"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20210214 18:37:47.822" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210214 18:37:46.805" endtime="20210214 18:37:47.822"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:46.515" endtime="20210214 18:37:47.824"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:46.514" endtime="20210214 18:37:47.825"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:46.511" endtime="20210214 18:37:47.826"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:20.953" endtime="20210214 18:37:47.829" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Cenário 02: Seguir uma Pessoa no Instagram">
+<kw name="Dado que eu vou realizar uma BUSCA no Instagram" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<kw name="Que eu vou realizar uma BUSCA no Instagram" library="ResourceBDD">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${ABABUSCA}</arg>
+</arguments>
+<status status="PASS" starttime="20210214 18:37:47.861" endtime="20210214 18:37:47.958"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ABABUSCA}</arg>
+<arg>instagram</arg>
+</arguments>
+<msg timestamp="20210214 18:37:47.960" level="INFO">Typing text 'instagram' into text field 'xpath=/html/body/div[1]/section/nav/div[2]/div/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20210214 18:37:47.959" endtime="20210214 18:37:48.327"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210214 18:37:50.341" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210214 18:37:48.328" endtime="20210214 18:37:50.341"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:47.854" endtime="20210214 18:37:50.342"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:47.851" endtime="20210214 18:37:50.342"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:47.846" endtime="20210214 18:37:50.342"></status>
+</kw>
+<kw name="Quando clicar no perfil que eu quero" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<kw name="Clicar no perfil que eu quero" library="ResourceBDD">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]/div/div[1]/a/div/div[2]</arg>
+</arguments>
+<status status="PASS" starttime="20210214 18:37:50.346" endtime="20210214 18:37:50.367"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]/div/div[1]/a/div/div[2]</arg>
+</arguments>
+<msg timestamp="20210214 18:37:50.368" level="INFO">Clicking element 'xpath=//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]/div/div[1]/a/div/div[2]'.</msg>
+<status status="PASS" starttime="20210214 18:37:50.367" endtime="20210214 18:37:50.699"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210214 18:37:55.704" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210214 18:37:50.700" endtime="20210214 18:37:55.704"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:50.345" endtime="20210214 18:37:55.705"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:50.344" endtime="20210214 18:37:55.706"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:50.343" endtime="20210214 18:37:55.706"></status>
+</kw>
+<kw name="Então vou poder seguir o perfil clicando no BOTÃO" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<kw name="Vou poder seguir o perfil clicando no BOTÃO" library="ResourceBDD">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>xpath=/html/body/div[1]/section/main/div/header/section/div[1]/div[2]/div/div/div/span/span[1]</arg>
+</arguments>
+<status status="PASS" starttime="20210214 18:37:55.713" endtime="20210214 18:37:55.753"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/div[1]/section/main/div/header/section/div[1]/div[2]/div/div/div/span/span[1]</arg>
+</arguments>
+<msg timestamp="20210214 18:37:55.754" level="INFO">Clicking element 'xpath=/html/body/div[1]/section/main/div/header/section/div[1]/div[2]/div/div/div/span/span[1]'.</msg>
+<status status="PASS" starttime="20210214 18:37:55.754" endtime="20210214 18:37:56.009"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210214 18:37:59.026" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210214 18:37:56.010" endtime="20210214 18:37:59.029"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:55.712" endtime="20210214 18:37:59.029"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:55.711" endtime="20210214 18:37:59.031"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:55.708" endtime="20210214 18:37:59.031"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:47.839" endtime="20210214 18:37:59.034" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Cenário 03: Abrir imagem, curtir e comentar">
+<kw name="Dado que eu clico em uma IMAGEM do perfil" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<kw name="Que eu clico em uma IMAGEM do perfil" library="ResourceBDD">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollBy(900, 900)</arg>
+</arguments>
+<msg timestamp="20210214 18:37:59.058" level="INFO">Executing JavaScript:
+window.scrollBy(900, 900)
+Without any arguments.</msg>
+<status status="PASS" starttime="20210214 18:37:59.054" endtime="20210214 18:37:59.098"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210214 18:38:01.102" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210214 18:37:59.100" endtime="20210214 18:38:01.102"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>xpath=/html/body/div[1]/section/main/div/div[4]/article/div[1]/div/div[2]/div[1]</arg>
+</arguments>
+<status status="PASS" starttime="20210214 18:38:01.102" endtime="20210214 18:38:01.166"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/div[1]/section/main/div/div[4]/article/div[1]/div/div[2]/div[1]</arg>
+</arguments>
+<msg timestamp="20210214 18:38:01.167" level="INFO">Clicking element 'xpath=/html/body/div[1]/section/main/div/div[4]/article/div[1]/div/div[2]/div[1]'.</msg>
+<status status="PASS" starttime="20210214 18:38:01.167" endtime="20210214 18:38:01.341"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210214 18:38:06.347" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210214 18:38:01.342" endtime="20210214 18:38:06.347"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:59.051" endtime="20210214 18:38:06.347"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:59.050" endtime="20210214 18:38:06.347"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:59.047" endtime="20210214 18:38:06.347"></status>
+</kw>
+<kw name="Quando espero carregar" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<kw name="Espero carregar" library="ResourceBDD">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>xpath=/html/body/div[4]/div[2]/div</arg>
+</arguments>
+<status status="PASS" starttime="20210214 18:38:06.352" endtime="20210214 18:38:06.390"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:38:06.350" endtime="20210214 18:38:06.391"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:38:06.350" endtime="20210214 18:38:06.391"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:38:06.348" endtime="20210214 18:38:06.391"></status>
+</kw>
+<kw name="Então dou uma curtida" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<kw name="Dou uma curtida" library="ResourceBDD">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>xpath=/html/body/div[4]/div[2]/div</arg>
+</arguments>
+<status status="PASS" starttime="20210214 18:38:06.397" endtime="20210214 18:38:06.416"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[1]/button/div/span</arg>
+</arguments>
+<msg timestamp="20210214 18:38:06.417" level="INFO">Clicking element 'xpath=/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[1]/button/div/span'.</msg>
+<status status="PASS" starttime="20210214 18:38:06.417" endtime="20210214 18:38:06.715"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20210214 18:38:07.720" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210214 18:38:06.716" endtime="20210214 18:38:07.720"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:38:06.396" endtime="20210214 18:38:07.720"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:38:06.395" endtime="20210214 18:38:07.721"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:38:06.394" endtime="20210214 18:38:07.721"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:59.044" endtime="20210214 18:38:07.722" critical="yes"></status>
+</test>
+<kw name="Fechar Navegador" library="ResourceBDD" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210214 18:38:07.727" endtime="20210214 18:38:10.200"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:38:07.727" endtime="20210214 18:38:10.201"></status>
+</kw>
+<status status="PASS" starttime="20210214 18:37:20.438" endtime="20210214 18:38:10.201"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="TestCasesBDDExemplo">TestCasesBDDExemplo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
